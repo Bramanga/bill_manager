@@ -7,6 +7,11 @@ gem 'rails', '3.0.6'
 
 gem 'sqlite3'
 
+gem 'cucumber'
+gem 'cucumber-rails'
+gem 'capybara'
+gem 'selenium'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
