@@ -10,6 +10,12 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the login\s?page/
+      '/log_in'
+    when /the bills page/
+      '/bills'
+    when /the sessions page/
+      '/sessions'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
@@ -31,3 +37,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+

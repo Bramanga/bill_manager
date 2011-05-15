@@ -11,7 +11,10 @@ gem 'sqlite3'
 group :development, :test do
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'selenium'
   gem 'database_cleaner'
+  gem 'launchy'
+  gem 'factory_girl_rails'
 end
 
 # Use unicorn as the web server

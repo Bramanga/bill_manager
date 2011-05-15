@@ -1,0 +1,33 @@
+<% authorize %>
+
+<h1>Listing bills</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Posted date</th>
+    <th>Due date</th>
+    <th>Posted by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bills.each do |bill| %>
+  <tr>
+    <td><%= bill.name %></td>
+    <td><%= bill.amount %></td>
+    <td><%= bill.posted_date %></td>
+    <td><%= bill.due_date %></td>
+    <td><%= bill.posted_by %></td>
+    <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
+    <td><%= link_to 'Destroy', bill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Post Bill', new_bill_path %>
+

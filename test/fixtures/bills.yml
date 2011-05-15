@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  amount: 9.99
+  posted_date: 2011-05-01
+  due_date: 2011-05-01
+  posted_by: MyString
+
+two:
+  name: MyString
+  amount: 9.99
+  posted_date: 2011-05-01
+  due_date: 2011-05-01
+  posted_by: MyString
