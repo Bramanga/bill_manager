@@ -14,7 +14,7 @@ Feature: Login
     Then I should be on the bills page
 
   Scenario: Successful user login
-    Given a user exists with email: "test@bramanga.com" and password: "google"
+    Given a user exists with email "test@bramanga.com" and password "google"
     Given I am on the login page
     And I fill in "Email" with "test@bramanga.com"
     And I fill in "Password" with "google"
@@ -22,7 +22,7 @@ Feature: Login
     Then I should be on the bills page
 
   Scenario: Failed user login
-    Given a user exists with email: "test@bramanga.com" and password: "google"
+    Given a user exists with email "test@bramanga.com" and password "google"
     And I am on the login page
     And I fill in "Email" with "test@bramanga.com"
     And I fill in "Password" with "yahoo"
